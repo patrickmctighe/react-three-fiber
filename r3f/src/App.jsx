@@ -1,6 +1,7 @@
 import { Canvas, useFrame } from '@react-three/fiber'
 import Cube from './Cube'
 import Sphere from './Sphere'
+import Torus from './Torus'
 import './App.css'
 
 
@@ -20,7 +21,8 @@ function App() {
 <Cube position={[1,2,0]} color={"purple"}/>
 
 </group> */}
-<Sphere position={[0,0,0]} args={[1,30,30]} color={"orange"} />
+{/* <Sphere position={[0,0,0]} args={[1,30,30]} color={"orange"} /> */}
+<Torus position={[0,0,0]} args={[1,0.5,30,30]} color={"blue"} />
  </Canvas>
 
   )
